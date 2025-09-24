@@ -92,19 +92,19 @@ a {
 
     #focus {
 
-        .focus-cover {
+        /* .focus-cover {
             width: 100%;
             aspect-ratio: 1 / 1;
             background-color: orange;
-        }
+        } */
 
-        .focus-title {
+        /* .focus-reproduce {
             width: 100%;
             height: 4rem;
             background-color: yellow;
-        }
+        } */
 
-        .focus-go-to {
+        /* .focus-go-to {
             width: 100%;
             height: 3rem;
             background-color: greenyellow;
@@ -132,7 +132,7 @@ a {
             width: 100%;
             height: 3rem;
             background-color: darkolivegreen;
-        }
+        } */
     }
 }
 
@@ -167,6 +167,24 @@ a {
     width: 35%;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50px;
+}
+
+.focus-btn {
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 5px;
+    color: var(--band-primary);
+    font-size: 1rem;
+}
+
+.bgc-white {
+    background-color: white;
+}
+
+.bgc-empty {
+    color: white;
+    background-color: var(--band-primary);
+    border: 1px solid white;
 }
 
 /* #endregion buttons */
@@ -250,12 +268,12 @@ main {
         }
     }
 
-    .album-title{
+    .album-title {
         color: white;
         margin: 1rem 0
     }
 
-    .album-author{
+    .album-author {
         color: white;
         margin: 1rem 0;
     }
@@ -269,4 +287,82 @@ main {
 #focus {
     width: 30%;
     overflow-y: auto;
+    padding: 0 2rem;
+
+
+    /* cover */
+    .focus-cover {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    /* song */
+    .focus-song {
+        color: white;
+        align-items: center;
+        margin: 3rem 0 2rem;
+
+        i {
+            font-size: 5rem;
+            margin-right: 1rem;
+        }
+    }
+
+    .song-info {
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .song-name {
+        color: white;
+    }
+
+    /* buttons */
+    button{
+        margin: 0.5rem 0;
+    }
+
+    /* album-infos */
+    .focus-album-info, .focus-album-release{
+        color: white;
+        margin-bottom: 0.5rem;
+    }
+
+    .focus-album-info{
+        margin-top: 2rem;
+    }
+
+    /* profile */
+    .focus-profile{
+        align-items: center;
+        margin: 2rem 0 0.7rem;
+    }
+
+    .profile-picture {
+        width: 4.5rem;
+        aspect-ratio: 1 / 1;
+        display: inline-block;
+        margin-right: 1rem;
+
+        img {
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
+
+    .profile-info{
+        flex-direction: column;
+        gap: 0.5rem;
+        color: white;
+    }
+
+    /* follow button */
+    #follow{
+        margin-bottom: 2rem;
+    }
 }
