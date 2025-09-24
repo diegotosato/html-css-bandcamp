@@ -13,6 +13,7 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--band-primary);
 }
 
 img {
@@ -152,12 +153,21 @@ a {
 .main-container {
     width: 80%;
     margin: 0 auto;
+    height: 100vh;
+
 }
 
 .d-flex {
     display: flex;
 }
 
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
 
 /* #region buttons */
 .btn {
@@ -206,7 +216,7 @@ a {
 
 /* #region Header */
 header {
-    background-color: var(--band-primary);
+    height: 120px;
 }
 
 .header-top {
@@ -255,16 +265,16 @@ header {
 
 /* #region main */
 main {
-    background-color: var(--band-primary);
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 
 #explore {
+    height: calc(100% - 120px - 2rem);
     width: 70%;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-right: 1px solid var(--band-txt-gray);
-    padding-right: 2rem;
+    padding-right: 1rem;
+    overflow: auto;
 }
 
 
@@ -298,9 +308,12 @@ main {
 
 
 #focus {
+    height: calc(100% - 120px - 2rem);
     width: 30%;
-    overflow-y: auto;
-    padding-left: 2rem;
+    padding: 0 1rem;
+    left: 0;
+    overflow: auto;
+
 
 
     /* cover */
