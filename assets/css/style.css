@@ -13,6 +13,12 @@ body {
     height: 100vh;
 }
 
+:root{
+    --band-primary: #222222;
+    --band-head-btm: #2b2b2b;
+    --band-search: #464646;
+}
+
 /* #endregion */
 
 
