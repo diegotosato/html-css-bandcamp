@@ -227,7 +227,6 @@ header {
 .header-top {
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 0;
 }
 
 .h-top-left {
@@ -239,6 +238,7 @@ header {
 
 #logo {
     width: 150px;
+    cursor: pointer;
 
     & * {
         width: 100%;
@@ -252,8 +252,16 @@ header {
 .h-top-right {
     a {
         color: white;
-        margin-left: 2rem;
+        width: 90px;
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
     }
+}
+
+.h-top-right a:hover{
+    background-color: var(--band-search);
 }
 
 .header-bottom {
