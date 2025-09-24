@@ -169,6 +169,11 @@ a {
     position: absolute;
 }
 
+.scrollbar{
+    scrollbar-width: thin;
+    scrollbar-color: var(--band-txt-gray) var(--band-primary);
+}
+
 /* #region buttons */
 .btn {
     padding: 0.6rem 0;
