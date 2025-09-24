@@ -1,5 +1,55 @@
+/* #region CSS reset */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* #endregion */
+
+
+/* #region Generics */
+body{
+    height: 100vh;
+}
+/* #endregion */
+
+
+
+
+/* degub */
+.debug{
+    *{
+        border: 1px dashed black;
+    }
+
+    header{
+        background-color: blue;
+    }
+    
+    .header-top, .header-bottom{
+        height: 50%;
+    }
+}
+
+
+
+
+
+/* #region commons */
+.d-flex{
+    display: flex;
+}
+
+
+
+
+/* #region styles */
+header{
+    height: 108px;
+}
+
+main{
+    height: calc(100% - 108px);
+    background-color: red;
+}
+
