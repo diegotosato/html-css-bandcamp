@@ -263,7 +263,7 @@ header {
     }
 }
 
-.h-top-right a:hover{
+.h-top-right a:hover {
     background-color: var(--band-search);
 }
 
@@ -394,7 +394,7 @@ main {
         color: white;
     }
 
-    .focus-song i:hover{
+    .focus-song i:hover {
         color: var(--hover-lighter);
         cursor: pointer;
     }
@@ -409,16 +409,16 @@ main {
         margin: 0.5rem 0;
     }
 
-    button:hover{
+    button:hover {
         text-decoration: underline;
         cursor: pointer;
     }
 
-    button.bgc-white:hover{
+    button.bgc-white:hover {
         background-color: var(--hover-lighter);
     }
 
-    button.bgc-empty:hover{
+    button.bgc-empty:hover {
         background-color: var(--hover-darker);
     }
 
