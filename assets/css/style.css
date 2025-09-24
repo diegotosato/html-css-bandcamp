@@ -59,13 +59,14 @@ main {
     height: calc(100% - 108px);
     background-color: red;
     padding: 1rem 1.5rem 0;
+    gap: 1rem;
 }
 
 .main-left {
     width: 70%;
     overflow-y: auto;
     flex-wrap: wrap;
-
+    gap: 1rem;
 }
 
 .main-right {
@@ -73,5 +74,5 @@ main {
 }
 
 .album-card {
-    width: calc(100% / 4);
+    width: calc((100% / 4) - 1rem);
 }
