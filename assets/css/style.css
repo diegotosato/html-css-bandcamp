@@ -1,33 +1,40 @@
 /* #region CSS reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* #endregion */
 
 
 /* #region Generics */
-body{
+body {
     height: 100vh;
 }
+
 /* #endregion */
 
 
 
 
 /* degub */
-.debug{
-    *{
+.debug {
+    * {
         border: 1px dashed black;
     }
 
-    header{
+    header {
         background-color: blue;
     }
-    
-    .header-top, .header-bottom{
+
+    .header-top,
+    .header-bottom {
         height: 50%;
+    }
+
+    .album-card {
+        height: 350px;
     }
 }
 
@@ -36,7 +43,7 @@ body{
 
 
 /* #region commons */
-.d-flex{
+.d-flex {
     display: flex;
 }
 
@@ -44,12 +51,27 @@ body{
 
 
 /* #region styles */
-header{
+header {
     height: 108px;
 }
 
-main{
+main {
     height: calc(100% - 108px);
     background-color: red;
+    padding: 1rem 1.5rem 0;
 }
 
+.main-left {
+    width: 70%;
+    overflow-y: auto;
+    flex-wrap: wrap;
+
+}
+
+.main-right {
+    width: 30%;
+}
+
+.album-card {
+    width: calc(100% / 4);
+}
