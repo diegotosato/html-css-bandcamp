@@ -169,7 +169,7 @@ a {
     position: absolute;
 }
 
-.scrollbar{
+.scrollbar {
     scrollbar-width: thin;
     scrollbar-color: var(--band-txt-gray) var(--band-primary);
 }
@@ -287,9 +287,25 @@ main {
     width: calc((100% / 4) - 1rem);
     margin-bottom: 3.5rem;
 
+
+
+
     .album-cover {
         width: 100%;
         border: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+        left: 0;
+        top: 0;
+
+        .play-button {
+            position: absolute;
+            left: 1rem;
+            bottom: 1rem;
+            cursor: pointer;
+            font-size: 2rem;
+            color: white;
+            display: none;
+        }
 
         img {
             width: 100%;
@@ -308,6 +324,16 @@ main {
 
     .album-genre {
         color: var(--band-txt-gray);
+    }
+}
+
+.album-card:hover {
+    .album-cover {
+        border: 1px solid transparent;
+    }
+
+    .play-button {
+        display: block;
     }
 }
 
