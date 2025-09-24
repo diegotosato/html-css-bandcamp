@@ -13,7 +13,7 @@ body {
     height: 100vh;
 }
 
-:root{
+:root {
     --band-primary: #222222;
     --band-head-btm: #2b2b2b;
     --band-search: #464646;
@@ -39,8 +39,43 @@ body {
         height: 50%;
     }
 
+    .h-top-left {
+        width: 450px;
+        height: 100%;
+        background-color: white;
+    }
+
+    .h-top-right {
+        width: 200px;
+        height: 100%;
+        background-color: white;
+    }
+
+    .tag-research{
+        width: 450px;
+        height: 100%;
+        background-color: white;
+    }
+
     .album-card {
-        height: 350px;
+
+        .album-cover{
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: orange;
+        }
+
+        .album-title{
+            width: 100%;
+            height: 2rem;
+            background-color: yellow;
+        }
+
+        .album-genre{
+            width: 100%;
+            height: 1rem;
+            background-color: greenyellow;
+        }
     }
 }
 
@@ -57,9 +92,21 @@ body {
 
 
 /* #region styles */
+
+/* #region Header */
 header {
     height: 108px;
 }
+
+.header-top {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
 
 main {
     height: calc(100% - 108px);
