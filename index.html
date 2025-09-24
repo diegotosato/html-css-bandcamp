@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bandcamp</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body class="debug">
     <header>
         <div class="header-top d-flex">
-            <div class="h-top-left"></div>
-            <div class="h-top-right"></div>
+            <div class="h-top-left d-flex">
+                <div id="logo">
+                    <img id="logo-desktop" src="./assets/img/logo.jpeg" alt="bandcamp_logo">
+                    <img id="logo-mobile" src="./assets/img/logo-mobile.jpeg" alt="bandcamp_logo_mobile">
+                </div>
+
+                <div class="searchbar">
+                    Search and discover music
+                </div>
+
+            </div>
+            <div class="h-top-right">
+                <a href="#">Sign up</a>
+                <a href="">Log in</a>
+            </div>
         </div>
         <div class="header-bottom">
             <div class="tag-research"></div>
         </div>
     </header>
+    <!-- /header -->
+
+
     <main class="d-flex">
         <div id="explore" class="main-left d-flex">
             <div class="album-card">
@@ -35,4 +53,5 @@
         </div>
     </main>
 </body>
+
 </html>

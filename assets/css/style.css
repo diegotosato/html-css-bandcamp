@@ -13,6 +13,10 @@ body {
     height: 100vh;
 }
 
+img{
+    display: block;
+}
+
 :root {
     --band-primary: #222222;
     --band-head-btm: #2b2b2b;
@@ -30,20 +34,20 @@ body {
         border: 1px dashed black;
     }
 
-    header {
+    /* header {
         background-color: blue;
-    }
+    } */
 
     .header-top,
     .header-bottom {
         height: 50%;
     }
 
-    .h-top-left {
+    /* .h-top-left {
         width: 450px;
         height: 100%;
         background-color: white;
-    }
+    } */
 
     .h-top-right {
         width: 200px;
@@ -142,12 +146,37 @@ body {
 
 /* #region Header */
 header {
-    height: 108px;
+    background-color: var(--band-primary);
+    padding: 0 2rem;
 }
 
 .header-top {
     align-items: center;
     justify-content: space-between;
+}
+
+.h-top-left{
+    align-items: center;
+    gap: 2rem;
+}
+
+#logo{
+    width: 150px;
+    & *{
+        width: 100%;
+    }
+}
+
+#logo-mobile{
+    display: none;
+}
+
+.searchbar{
+    
+}
+
+.header-bottom{
+    background-color: var(--band-head-btm);
 }
 
 
