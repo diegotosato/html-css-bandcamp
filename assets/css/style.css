@@ -29,6 +29,8 @@ a {
     --band-head-btm: #2b2b2b;
     --band-search: #464646;
     --band-txt-gray: #969696;
+    --hover-lighter: #cccccc;
+    --hover-darker: #686868;
 }
 
 /* #endregion */
@@ -203,6 +205,7 @@ a {
     border-radius: 5px;
     color: var(--band-primary);
     font-size: 1rem;
+    border: none;
 }
 
 .bgc-white {
@@ -365,6 +368,10 @@ main {
         }
     }
 
+
+
+
+
     /* song */
     .focus-song {
         color: white;
@@ -387,10 +394,38 @@ main {
         color: white;
     }
 
+    .focus-song i:hover{
+        color: var(--hover-lighter);
+        cursor: pointer;
+    }
+
+
+
+
+
+
     /* buttons */
     button {
         margin: 0.5rem 0;
     }
+
+    button:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    button.bgc-white:hover{
+        background-color: var(--hover-lighter);
+    }
+
+    button.bgc-empty:hover{
+        background-color: var(--hover-darker);
+    }
+
+
+
+
+
 
     /* album-infos */
     .focus-album-info,
@@ -402,6 +437,11 @@ main {
     .focus-album-info {
         margin-top: 2rem;
     }
+
+
+
+
+
 
     /* profile */
     .focus-profile {
@@ -426,6 +466,10 @@ main {
         gap: 0.5rem;
         color: white;
     }
+
+
+
+
 
     /* follow button */
     #follow {
