@@ -11,6 +11,7 @@
 /* #region Generics */
 body {
     height: 100vh;
+    overflow: hidden;
 }
 
 img {
@@ -25,6 +26,7 @@ a {
     --band-primary: #222222;
     --band-head-btm: #2b2b2b;
     --band-search: #464646;
+    --band-txt-gray: #969696;
 }
 
 /* #endregion */
@@ -35,7 +37,7 @@ a {
 /* degub */
 .debug {
     * {
-        border: 1px dashed black;
+        border: 1px dashed red;
     }
 
     /* header {
@@ -65,7 +67,7 @@ a {
         background-color: white;
     } */
 
-    .album-card {
+    /* .album-card {
 
         .album-cover {
             width: 100%;
@@ -84,7 +86,7 @@ a {
             height: 1rem;
             background-color: greenyellow;
         }
-    }
+    } */
 
 
 
@@ -148,7 +150,7 @@ a {
 .btn {
     padding: 0.6rem 0;
     padding-left: 1rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--band-txt-gray);
     background-color: var(--band-search);
 
     i {
@@ -157,7 +159,7 @@ a {
 }
 
 .search {
-    width: 70%;
+    width: calc(100% - 150px);
     border-radius: 5px;
 }
 
@@ -166,12 +168,10 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50px;
 }
+
 /* #endregion buttons */
 
 
-
-
-/* #region styles */
 
 /* #region Header */
 header {
@@ -192,7 +192,7 @@ header {
 }
 
 #logo {
-    width: 25%;
+    width: 150px;
 
     & * {
         width: 100%;
@@ -215,35 +215,58 @@ header {
     padding: 0.5rem 2rem;
 }
 
+/* #endregion */
 
 
 
 
 
 
+/* #region main */
 main {
     height: calc(100% - 108px);
-    background-color: red;
+    background-color: var(--band-primary);
     padding: 1rem 1.5rem 0;
     gap: 1rem;
 }
 
-.main-left {
+#explore {
     width: 70%;
     overflow-y: auto;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.main-right {
-    width: 30%;
-}
 
 .album-card {
     width: calc((100% / 4) - 1rem);
+
+    .album-cover {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .album-title{
+        color: white;
+        margin: 1rem 0
+    }
+
+    .album-author{
+        color: white;
+        margin: 1rem 0;
+    }
+
+    .album-genre {
+        color: var(--band-txt-gray);
+    }
 }
 
 
 #focus {
+    width: 30%;
     overflow-y: auto;
 }
