@@ -13,8 +13,12 @@ body {
     height: 100vh;
 }
 
-img{
+img {
     display: block;
+}
+
+a{
+    text-decoration: none;
 }
 
 :root {
@@ -38,10 +42,10 @@ img{
         background-color: blue;
     } */
 
-    .header-top,
+    /* .header-top,
     .header-bottom {
         height: 50%;
-    }
+    } */
 
     /* .h-top-left {
         width: 450px;
@@ -49,13 +53,13 @@ img{
         background-color: white;
     } */
 
-    .h-top-right {
+    /* .h-top-right {
         width: 200px;
         height: 100%;
         background-color: white;
-    }
+    } */
 
-    .tag-research{
+    .tag-research {
         width: 450px;
         height: 100%;
         background-color: white;
@@ -63,19 +67,19 @@ img{
 
     .album-card {
 
-        .album-cover{
+        .album-cover {
             width: 100%;
             aspect-ratio: 1 / 1;
             background-color: orange;
         }
 
-        .album-title{
+        .album-title {
             width: 100%;
             height: 2rem;
             background-color: yellow;
         }
 
-        .album-genre{
+        .album-genre {
             width: 100%;
             height: 1rem;
             background-color: greenyellow;
@@ -84,45 +88,45 @@ img{
 
 
 
-    #focus{
+    #focus {
 
-        .focus-cover{
+        .focus-cover {
             width: 100%;
             aspect-ratio: 1 / 1;
             background-color: orange;
         }
 
-        .focus-title{
+        .focus-title {
             width: 100%;
             height: 4rem;
             background-color: yellow;
         }
 
-        .focus-go-to{
+        .focus-go-to {
             width: 100%;
             height: 3rem;
             background-color: greenyellow;
         }
 
-        .focus-wishlist{
+        .focus-wishlist {
             width: 100%;
             height: 3rem;
             background-color: greenyellow;
         }
 
-        .focus-info{
+        .focus-info {
             width: 100%;
             height: 2.5rem;
             background-color: green;
         }
 
-        .focus-profile{
+        .focus-profile {
             width: 100%;
             height: 2.5rem;
             background-color: darkgreen;
         }
 
-        .focus-follow{
+        .focus-follow {
             width: 100%;
             height: 3rem;
             background-color: darkolivegreen;
@@ -147,7 +151,7 @@ img{
 /* #region Header */
 header {
     background-color: var(--band-primary);
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .header-top {
@@ -155,27 +159,42 @@ header {
     justify-content: space-between;
 }
 
-.h-top-left{
+.h-top-left {
     align-items: center;
     gap: 2rem;
 }
 
-#logo{
+#logo {
     width: 150px;
-    & *{
+
+    & * {
         width: 100%;
     }
 }
 
-#logo-mobile{
+#logo-mobile {
     display: none;
 }
 
-.searchbar{
-    
+.searchbar {
+    padding: 0.6rem 10rem 0.6rem 0.6rem;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: var(--band-search);
+    border-radius: 3px;
+
+    i {
+        margin-right: 0.5rem;
+    }
 }
 
-.header-bottom{
+.h-top-right{
+    a{
+        color: white;
+        margin-left: 2rem;
+    }
+}
+
+.header-bottom {
     background-color: var(--band-head-btm);
 }
 
@@ -207,6 +226,6 @@ main {
 }
 
 
-#focus{
+#focus {
     overflow-y: auto;
 }
