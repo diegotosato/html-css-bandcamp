@@ -1,0 +1,211 @@
+/* break at 1470px */
+@media screen and (max-width: 1470px) {
+
+    .h-top-left,
+    .secondary-search {
+        width: 45%;
+    }
+
+}
+
+/* break at 1270px */
+@media screen and (max-width: 1270px) {
+
+    .container,
+    .main-container {
+        width: 90%;
+    }
+
+    .h-top-left,
+    .secondary-search {
+        width: 50%;
+    }
+
+}
+
+/* break at 1081px */
+@media screen and (max-width: 1081px) {
+
+    .container,
+    .main-container {
+        width: 90%;
+    }
+
+    .album-card {
+        width: calc((100% / 3) - 1rem);
+
+    }
+}
+
+/* break at 920px */
+@media screen and (max-width: 920px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    .h-top-left,
+    .secondary-search {
+        width: 60%;
+    }
+
+    .album-card {
+        width: calc((100% / 3) - 1rem);
+    }
+}
+
+
+
+/* #region media query tablet */
+@media screen and (max-width: 774px) {
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    .container,
+    .main-container {
+        width: 95%;
+    }
+
+    .h-top-left,
+    .secondary-search {
+        width: 65%;
+    }
+
+    .h-top-right {
+        a {
+            width: 70px;
+        }
+    }
+
+    /* main */
+
+    /* explore side */
+    #explore {
+        width: 65%;
+    }
+
+    .album-card {
+        width: calc((100% / 2) - 1rem);
+    }
+
+
+    /* focus side */
+    #focus {
+        width: 35%;
+
+
+        .focus-song {
+            margin: 2rem 0 1.5rem;
+
+            i {
+                font-size: 4.5rem;
+            }
+        }
+
+        .song-info {
+            gap: 0.2rem;
+        }
+
+        .focus-album-info {
+            margin-top: 1.5rem;
+        }
+
+        .profile-picture {
+            width: 3.5rem;
+        }
+    }
+}
+
+/* #endregion */
+
+
+/* break at 700px */
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    #focus {
+        width: 35%;
+
+
+        .focus-song {
+            margin: 2rem 0 1.5rem;
+
+            i {
+                font-size: 3.8rem;
+            }
+        }
+    }
+}
+
+
+/* #region media query mobile */
+@media screen and (max-width: 600px) {
+
+    .h-top-left {
+        width: 20%;
+    }
+
+    #logo {
+        width: 80px;
+        background-image: url(../img/light_version_img/bandcamp-logo-mobile.png);
+    }
+
+    .btn.search {
+        display: none;
+    }
+
+    .secondary-search {
+        width: 100%;
+    }
+
+    .h-top-right {
+        a {
+            width: auto;
+            margin-left: 20px;
+        }
+
+        i {
+            display: inline;
+            color: black;
+        }
+    }
+
+    .toggle {
+        margin-right: 20px;
+    }
+
+    /* main */
+
+    #explore {
+        width: 100%;
+    }
+
+    #focus {
+        display: none;
+    }
+}
+
+/* #endregion */
+
+
+/* break at 400px */
+@media screen and (max-width: 400px) {
+
+    .h-top-left {
+        width: 20%;
+    }
+
+    .h-top-right {
+        a {
+            width: auto;
+            margin-left: 12px;
+        }
+
+        i {
+            display: inline;
+        }
+    }
+}
