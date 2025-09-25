@@ -1,3 +1,60 @@
+/* break at 1470px */
+@media screen and (max-width: 1470px) {
+
+    .h-top-left,
+    .secondary-search {
+        width: 45%;
+    }
+
+}
+
+/* break at 1270px */
+@media screen and (max-width: 1270px) {
+
+    .container,
+    .main-container {
+        width: 90%;
+    }
+
+    .h-top-left,
+    .secondary-search {
+        width: 50%;
+    }
+
+}
+
+/* break at 1081px */
+@media screen and (max-width: 1081px) {
+
+    .container,
+    .main-container {
+        width: 90%;
+    }
+
+    .album-card {
+        width: calc((100% / 3) - 1rem);
+
+    }
+}
+
+/* break at 920px */
+    @media screen and (max-width: 920px) {
+        body {
+            font-size: 0.9rem;
+        }
+
+        .h-top-left,
+        .secondary-search {
+            width: 60%;
+        }
+
+        .album-card {
+            width: calc((100% / 3) - 1rem);
+        }
+    }
+
+
+
 /* #region media query tablet */
 @media screen and (max-width: 774px) {
 
@@ -10,10 +67,7 @@
         width: 95%;
     }
 
-    .h-top-left {
-        width: 65%;
-    }
-
+    .h-top-left,
     .secondary-search {
         width: 65%;
     }
@@ -66,7 +120,7 @@
 /* #endregion */
 
 
-/* intermediate tablet/mobile break */
+/* break at 700px */
 @media screen and (max-width: 700px) {
     body {
         font-size: 0.8rem;
@@ -135,7 +189,7 @@
 /* #endregion */
 
 
-/* small-mobile-break */
+/* break at 400px */
 @media screen and (max-width: 400px) {
 
     .h-top-left {
