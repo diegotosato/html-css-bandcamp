@@ -225,6 +225,7 @@ a {
 /* #region Header */
 header {
     height: 120px;
+    background-color: var(--band-primary);
 }
 
 .header-top {
@@ -253,7 +254,15 @@ header {
 }
 
 .h-top-right {
-    a {
+    
+
+    i {
+        color: white;
+        display: none;
+    }
+}
+
+.h-top-right>a {
         color: white;
         width: 90px;
         display: inline-block;
@@ -261,12 +270,6 @@ header {
         line-height: 50px;
         text-align: center;
     }
-
-    i{
-        color: white;
-        display: none;
-    }
-}
 
 .h-top-right a:hover {
     background-color: var(--band-search);
