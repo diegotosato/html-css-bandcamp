@@ -1,7 +1,7 @@
 /* media query tablet */
 @media screen and (max-width: 774px) {
 
-    body{
+    body {
         font-size: 0.9rem;
     }
 
@@ -19,10 +19,40 @@
     }
 
     .h-top-right {
-    a {
-        width: 70px;
+        a {
+            width: 70px;
+        }
     }
-}
+
+    /* main */
+    #explore {
+        width: 60%;
+    }
+
+    #focus {
+        width: 40%;
+        overflow: hidden;
+
+        .focus-song {
+            margin: 2rem 0 1.5rem;
+
+            i {
+                font-size: 4.5rem;
+            }
+        }
+
+        .song-info {
+            gap: 0.2rem;
+        }
+
+        .focus-album-info {
+            margin-top: 1.5rem;
+        }
+
+        .profile-picture {
+            width: 3.5rem;
+        }
+    }
 }
 
 
