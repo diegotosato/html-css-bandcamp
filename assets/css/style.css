@@ -261,6 +261,11 @@ header {
         line-height: 50px;
         text-align: center;
     }
+
+    i{
+        color: white;
+        display: none;
+    }
 }
 
 .h-top-right a:hover {
