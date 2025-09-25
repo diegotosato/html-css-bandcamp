@@ -1,10 +1,30 @@
 /* media query tablet */
-@media screen and (max-width: 774px){
+@media screen and (max-width: 774px) {
 
+    body{
+        font-size: 0.9rem;
+    }
+
+    .container,
+    .main-container {
+        width: 95%;
+    }
+
+    .h-top-left {
+        width: 65%;
+    }
+
+    .secondary-search {
+        width: 65%;
+    }
+
+    .h-top-right {
+    a {
+        width: 70px;
+    }
+}
 }
 
 
 
-@media screen and (max-width: 600px){
-    
-}
+@media screen and (max-width: 600px) {}
