@@ -62,7 +62,29 @@
         }
     }
 }
+
 /* #endregion */
+
+
+/* intermediate tablet/mobile break */
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    #focus {
+        width: 35%;
+
+
+        .focus-song {
+            margin: 2rem 0 1.5rem;
+
+            i {
+                font-size: 3.8rem;
+            }
+        }
+    }
+}
 
 
 /* #region media query mobile */
@@ -109,4 +131,25 @@
         display: none;
     }
 }
+
 /* #endregion */
+
+
+/* small-mobile-break */
+@media screen and (max-width: 400px) {
+
+    .h-top-left {
+        width: 20%;
+    }
+
+    .h-top-right {
+        a {
+            width: auto;
+            margin-left: 12px;
+        }
+
+        i {
+            display: inline;
+        }
+    }
+}
