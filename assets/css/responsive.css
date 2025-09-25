@@ -1,4 +1,4 @@
-/* media query tablet */
+/* #region media query tablet */
 @media screen and (max-width: 774px) {
 
     body {
@@ -62,9 +62,10 @@
         }
     }
 }
+/* #endregion */
 
 
-
+/* #region media query mobile */
 @media screen and (max-width: 600px) {
 
     #logo {
@@ -97,4 +98,15 @@
             display: inline;
         }
     }
+
+    /* main */
+
+    #explore {
+        width: 100%;
+    }
+
+    #focus {
+        display: none;
+    }
 }
+/* #endregion */
